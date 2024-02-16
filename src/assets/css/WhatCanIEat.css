@@ -1,0 +1,51 @@
+.search-food { display: flex; justify-content: center;}
+.search-food input {
+    width: 500px; height: 50px; font-size: 1.3em;
+    padding: 15px;
+    border: 1px solid gray;;
+    border-radius: 20px 0 0 20px;
+    border-right: none !important;
+    outline: none;
+}
+.search-food button {
+    border: 1px solid gray;
+    width: 100px;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-food button:hover {
+    background-color: tomato; color: white;
+}
+.food-results {
+    width: 95vw;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+.food-results div img {
+    cursor: pointer;
+    max-width: 100%;
+}
+.food-results div h3 {
+    cursor: pointer;
+}
+.food-results div h3:hover {
+    color:tomato;
+}
+
+.recipe-dialog::backdrop {
+    background-color: #000000c6;
+}
+.recipe-dialog { max-width: 50vw;}
+.recipe-dialog iframe { margin: 10px auto; display: block;}
+.dialog-results {
+    display: flex; flex-direction: row;
+}
+.ingredients { width: 30%;}
+.instructions { width: 70%; padding-left: 5px; }
+.instructions p { text-align: left; white-space: pre-line; }
+.close-recipe-dialog {
+    border-radius: 50%; border: none; width: 50px; height: 50px;
+    position: absolute; right: 10px; top: 10px;
+}

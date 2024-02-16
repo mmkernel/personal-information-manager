@@ -1,0 +1,84 @@
+@font-face {
+    font-family: hand-font;
+    src: url(../fonts/hand-font.ttf);
+  }
+
+#notebook-paper ul {
+    width: 50vw;
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 29px, rgba(0, 176, 215, 0.4) 1px);
+    background-size: 100% 30px;
+    position:relative;
+    padding-top:30px;
+    padding-left:120px;
+    padding-right:20px;
+    overflow:hidden;
+    border-radius:5px;
+    -webkit-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+    -moz-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+    -ms-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+    -o-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+    box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+    &:before {
+      content:'';
+      display:block;
+      position:absolute;
+      z-index:1;
+      top:0;
+      left:140px;
+      height:100%;
+      width:1px;
+      background:#db4034;
+    }   
+}
+
+#notebook-paper ul li{
+    display: flex;
+    padding-left: 30px;
+    
+    font-size: 1.5em;
+    font-family: hand-font;
+}
+
+#notebook-paper ul li > div {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#notebook-paper ul li div input[type=number]{ width: 55px;}
+#notebook-paper > button {
+    width: 200px; padding: 15px 0; margin-left: 50px;
+}
+.my-subgrid {
+    grid-template-columns: subgrid;
+    margin-bottom: 6px;
+}
+.delete-from-list { border: none; background-color: transparent;}
+.my-dialog { padding: 10px; }
+
+.my-dialog section div {
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px;
+}
+.my-dialog button { height: 40px; border: 1px solid gray;}
+.my-dialog .close {
+    position: absolute;
+    top: 0; right: 0;
+    width: 30px; height: 30px;
+    
+    border: none;
+    background-color: tomato;
+    color: white;
+    
+}
+.my-dialog input, .my-dialog select {
+    border: 1px solid gray;
+    padding: 3px;
+    height: 40px;
+}
+.my-dialog input[type="number"] { width: 50px; }
+.my-dialog input[type="text"] { min-width: 250px; }
+

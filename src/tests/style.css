@@ -1,0 +1,55 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body { max-width:1600px }
+
+#mySidebar {
+    z-index:3;width:300px;
+}
+main {
+    margin-left:300px
+}
+
+#myOverlay { cursor:pointer }
+
+
+.allToDos {
+    display: flex; flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+.toDo {
+    margin-right: 15px; margin-bottom: 15px;
+    background-color:gold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.titleToDo {
+    display: flex; justify-content: space-between;
+    padding: 10px;
+}
+.titleToDo span {
+    font-weight: bolder;
+}
+.titleToDo input {
+    width: 20px; height: 20px;
+}
+.textToDo textarea {
+    background-color:lemonchiffon;
+    border: none;
+    min-height: 150px;
+    padding: 10px;
+    resize: none;
+}
+.toDoDates {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+.filters {
+    display: flex; align-items: center;
+    margin-bottom: 10px;
+}
+.filters div { margin-right: 5px;}
+.finished_tasks, .open_tasks {
+    padding: 8px;
+}
+.finished_tasks { background-color:azure ;}
+.open_tasks { background-color:lightpink;}
+

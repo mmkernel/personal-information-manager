@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PIM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-light-grey w3-content">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="close_menu()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img id="logo" style="width: 100%;" src="../assets/img/logo.png"><br><br>
+    <h4><b>PIM</b></h4>
+    <p>Personal Information Manager</p>
+  </div>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Things To Do</a> 
+    <a class="w3-bar-item w3-button w3-padding"><i class="fa fa-cutlery w3-margin-right"></i>What Can I Eat</a> 
+    <a class="w3-bar-item w3-button w3-padding"><i class="fa fa-shopping-basket fa-fw w3-margin-right"></i>What Do I Have To Buy</a>
+    <a class="w3-bar-item w3-button w3-padding"><i class="fa fa-search fa-fw w3-margin-right"></i>What Is Inside</a>
+    <a class="w3-bar-item w3-button w3-padding"><i class="fa fa-tasks fa-fw w3-margin-right"></i>Tasks</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="close_menu()" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<main class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="open_menu()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Things To Do</b></h1>
+    <div class="filters">
+      <span class="w3-margin-right">Filter:</span> 
+      <div>
+          <button class="w3-button w3-white"><i class="fa fa-th w3-margin-right"></i>ALLE</button>
+      </div>
+      <div class="open_tasks">
+          <input type="checkbox" id="open_tasks" />
+          <label for="open_tasks" class="w3-margin-right">Offene</label>
+      </div>
+      <div class="finished_tasks">
+          <input type="checkbox" id="finished_tasks"/>
+          <label for="finished_tasks" class="w3-margin-right">Erledigte</label>
+      </div>
+      <div class="filterBtn">
+          <button class="w3-button w3-white w3-hide-small"><i class="fa fa-filter"></i></button>
+      </div>
+      <div>
+          <button class="w3-button w3-white w3-hide-small"><i class="fa fa-sticky-note-o w3-margin-right"></i>Neues 2Do</button>
+      </div>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <section class="allToDos">
+    <div class="toDo">
+        <div class="titleToDo">
+            <span>Title</span>
+            <input type="checkbox" />
+        </div>
+        <div class="textToDo">
+            <textarea>Some text here</textarea>
+        </div>
+        <div class="toDoDates">
+            <div class="createdDate"><i class="fa fa-calendar w3-margin-right"></i>27.11.2023 13:36</div>
+            <div class="modifiedDate"><i class="fa fa-edit w3-margin-right"></i>27.11.2023 14:00</div>
+        </div>
+    </div>
+    <div class="toDo">
+        <div class="titleToDo" >
+            <span>Title</span>
+            <input type="checkbox" />
+        </div>
+        <div class="textToDo">
+            <textarea>Some text here</textarea>
+        </div>
+        <div class="toDoDates">
+            <div class="createdDate"><i class="fa fa-calendar w3-margin-right"></i>27.11.2023 13:36</div>
+            <div class="modifiedDate"><i class="fa fa-edit w3-margin-right"></i>27.11.2023 14:00</div>
+        </div>
+    </div>
+    <div class="toDo">
+        <div class="titleToDo" >
+            <span>Title</span>
+            <input type="checkbox" />
+        </div>
+        <div class="textToDo">
+            <textarea>Some text here</textarea>
+        </div>
+        <div class="toDoDates">
+            <div class="createdDate"><i class="fa fa-calendar w3-margin-right"></i>27.11.2023 13:36</div>
+            <div class="modifiedDate"><i class="fa fa-edit w3-margin-right"></i>27.11.2023 14:00</div>
+        </div>
+    </div>
+    <div class="toDo">
+        <div class="titleToDo" >
+            <span>Title</span>
+            <input type="checkbox" />
+        </div>
+        <div class="textToDo">
+            <textarea>Some text here</textarea>
+        </div>
+        <div class="toDoDates">
+            <div class="createdDate"><i class="fa fa-calendar w3-margin-right"></i>27.11.2023 13:36</div>
+            <div class="modifiedDate"><i class="fa fa-edit w3-margin-right"></i>27.11.2023 14:00</div>
+        </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. </p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>NEWS TICKER</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+     
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.mmkernel.com" title="Momcilo Milic" target="_blank" class="w3-hover-opacity">Momcilo Milic</a></div>
+
+<!-- End page content -->
+</main>
+<script>
+    // Script to open and close sidebar
+    function open_menu() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function close_menu() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+    
+</body>
+</html>

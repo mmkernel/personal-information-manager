@@ -1,0 +1,10 @@
+aside {
+    top: 0;
+    border-right: 1px solid gray;
+    margin-right: 15px;
+}
+#logo img {width:100%; display: block; margin: 0 auto; }
+#logo h3, p {text-align: center; font-weight: bolder;}
+.main-menu li {list-style-type: none;}
+.social-media {text-align: center;}
+.social-media i { margin: 0 3px; }

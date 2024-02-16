@@ -1,0 +1,119 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body { max-width:1600px }
+.centerText {
+    text-align: center; font-size: 2em;
+}
+
+button { cursor: pointer;}
+
+#mySidebar {
+    z-index:3;width:300px;
+}
+main {
+    margin-left:320px;
+}
+.main-menu ul li .active {
+    background-color: silver;
+}
+.pim-header {
+    margin-left:10px;
+}
+.pim-header label { cursor: pointer;}
+#logo {width:60%; display: block; margin: 0 auto; }
+#logo img {
+    height: 180px; width: auto;
+}
+#myOverlay { cursor:pointer }
+
+.allToDos {
+    display: flex; flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+.toDo {
+    margin-right: 15px; margin-bottom: 15px;
+    background-color:gold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    max-width: 230px;
+}
+.titleToDo {
+    display: flex; justify-content: space-between;
+    padding: 10px;
+    max-width: 230px;
+}
+.titleToDo p {
+    max-width: 100%; border: none; outline: none;
+}
+.titleToDo input {
+    width: 20px; height: 20px;
+}
+.textToDo {
+    background-color:lemonchiffon;
+    border: none;
+    min-height: 150px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+.toDoDates {
+    position: relative;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+.modifiedDate button {
+    background-color: transparent; border: none; margin-left: -6px; 
+}
+.deleteToDo { right: 8px; top: 8px; position: absolute; background-color:  transparent; border: none;  }
+.filters {
+    display: flex; align-items: center;
+    margin-bottom: 20px;
+}
+.filters div { margin-right: 5px;}
+
+.filters > div:nth-child(-n+4), .new-todo, .filterBtn button {
+    padding: 10px;
+    background-color: lemonchiffon;
+    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+.filters > div:nth-child(-n+4) label { padding-left: 5px; }
+.filterBtn button { padding: 10px 15px; }
+
+.finished_tasks, .open_tasks { padding: 8px; }
+.finished_tasks { background-color:azure ;}
+.open_tasks { background-color:lightpink;}
+
+footer {
+    z-index: 9999;
+    position: fixed; bottom: 0; width: 100% ; background-color: #000; color: white; text-align: center;
+    padding: 20px 0;
+    opacity: 0.95;
+}
+
+.my-dialog section div {
+    display: flex; flex-direction: column; margin-bottom: 10px;
+}
+.my-dialog section h3 {
+    text-align: center;
+}
+
+.finished {
+    opacity: 0.5;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+.addToDoDialog section form{
+    display: flex; flex-direction: column;
+    width: 300px;
+}
+.addToDoDialog::backdrop {
+    background-color: #000000c6;
+}
+.addToDoDialog input {height: 40px; margin-bottom: 5px; border: none;}
+.addToDoDialog textarea {height: 150px; margin-bottom: 5px; background-color: lemonchiffon; border: none;}
+
+.addToDoDialog {background-color: gold;}
+.addToDoDialog h3 { font-weight: bold; text-align: center; }
+.addToDoDialog button { height: 50px; border: none; margin-bottom: 2px;}

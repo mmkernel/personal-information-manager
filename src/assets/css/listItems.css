@@ -1,0 +1,15 @@
+.list-item {
+    color: tomato;
+    list-style-image: url(../img/ican_circle_unchecked.svg);
+}
+.list-item:hover {
+    list-style-image: url(../img/icon_circle_checked.svg);
+}
+
+.list-item:nth-child(odd) {
+    color: blueviolet;
+}
+
+li {
+    background-color: aqua;
+}
